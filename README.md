@@ -21,14 +21,14 @@
 
 Есть два равнозначных способа; оба кладут исполняемый файл в `build/`.
 
-**Скриптом (cmake не нужен):**
+**Скриптом:**
 
 ```sh
 ./build.sh                 # -> build/lab1
 ./build.sh --sanitize      # -> build/lab1 и build/lab1_asan
 ```
 
-**Через cmake (нужен для Windows и для IDE):**
+**cmake:**
 
 ```sh
 cmake -B build -DCMAKE_BUILD_TYPE=Release
