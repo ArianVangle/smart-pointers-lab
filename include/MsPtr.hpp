@@ -17,7 +17,6 @@ class MemorySpan;
 template <class T>
 class MsPtr {
   public:
-    using ElementType = T;
     using difference_type = std::ptrdiff_t;
     using value_type = T;
 
