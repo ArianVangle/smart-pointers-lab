@@ -34,8 +34,6 @@ struct Tracked {
     Tracked& operator=(const Tracked&) = default;
     ~Tracked() { --alive; }
 
-    bool operator==(const Tracked& other) const { return value == other.value; }
-
     int value;
 };
 
