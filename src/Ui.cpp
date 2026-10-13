@@ -57,7 +57,6 @@ const char* Red() { return Interactive() ? "\033[31m" : ""; }
 const char* Green() { return Interactive() ? "\033[32m" : ""; }
 const char* Yellow() { return Interactive() ? "\033[33m" : ""; }
 const char* Cyan() { return Interactive() ? "\033[36m" : ""; }
-const char* Magenta() { return Interactive() ? "\033[35m" : ""; }
 
 std::size_t DisplayWidth(const char* text) {
     std::size_t width = 0;

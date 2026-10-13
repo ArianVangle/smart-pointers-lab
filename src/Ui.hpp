@@ -14,7 +14,6 @@ const char* Red();
 const char* Green();
 const char* Yellow();
 const char* Cyan();
-const char* Magenta();
 
 std::size_t DisplayWidth(const char* text);
 
