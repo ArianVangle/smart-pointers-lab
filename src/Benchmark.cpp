@@ -67,7 +67,6 @@ Row Measure(const char* name, std::size_t n, std::size_t repeats, Make make) {
 
     const long long expectedSum = static_cast<long long>(n) * static_cast<long long>(n - 1) / 2;
     const std::size_t bytesBefore = alloc_stats::Current().liveBytes;
-    const std::size_t allocationsBefore = alloc_stats::Current().totalAllocations;
     bool memoryRecorded = false;
 
     for (std::size_t repeat = 0; repeat < repeats; ++repeat) {
@@ -127,7 +126,6 @@ Row Measure(const char* name, std::size_t n, std::size_t repeats, Make make) {
 
     row.leakedBytes =
         static_cast<long long>(alloc_stats::Current().liveBytes) - static_cast<long long>(bytesBefore);
-    (void)allocationsBefore;
     return row;
 }
 
